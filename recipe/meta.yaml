@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HDInterval_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HDInterval/HDInterval_{{ version }}.tar.gz
-  sha256: 349e0af81741d1b03386caebae77ac4505bc13dae194bb013b7d6cc51bc0a1f8
+  sha256: 047eeb08c3dba21dc1cba8e35e3191cde6cdc98c77ee3a3496e045f7937565ed
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1003
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,11 +37,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=HDInterval
   license: GPL-3
-  summary: A generic function and a set of methods to calculate highest density intervals for
-    a variety of classes of objects which can specify a probability density distribution,
-    including MCMC output, fitted density objects, and functions.
+  summary: A generic function and a set of methods to calculate highest density intervals for a variety of classes of objects which can specify a probability density distribution, including MCMC output, fitted density objects, and functions.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
