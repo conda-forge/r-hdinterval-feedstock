@@ -1,11 +1,11 @@
-About r-hdinterval
-==================
+About r-hdinterval-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hdinterval-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=HDInterval
 
 Package license: GPL-3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hdinterval-feedstock/blob/main/LICENSE.txt)
 
 Summary: A generic function and a set of methods to calculate highest density intervals for a variety of classes of objects which can specify a probability density distribution, including MCMC output, fitted density objects, and functions.
 
